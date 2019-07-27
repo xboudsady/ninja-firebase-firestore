@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Cloud Cafe</title>
 </head>
@@ -18,14 +21,14 @@
     </form>
   </div>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#config-web-app -->
 
   <script>
     // Your web app's Firebase configuration
+    // Object created -- apiKey -- is used to identy our project
     var firebaseConfig = {
       apiKey: "AIzaSyByDQZWOH7TUFoaNGGV7704_msWtc6UOdI",
       authDomain: "pandas-firestore-993be.firebaseapp.com",
@@ -37,6 +40,12 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
+    // Store our database here, by creating a reference
+    // Anytime we want to reference our database, we can call this constant
+    const db = firebase.firestore();
+
+   
   </script>
   
   <script src="app.js"></script>
