@@ -8,14 +8,36 @@
   <title>Cloud Cafe</title>
 </head>
 <body>
+  <h1>This is an H1</h1>
+
   <div class="content">
     <form action="" id="add-cafe-form">
       <ul id="cafe-list">
-        
+
       </ul>
     </form>
   </div>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyByDQZWOH7TUFoaNGGV7704_msWtc6UOdI",
+      authDomain: "pandas-firestore-993be.firebaseapp.com",
+      databaseURL: "https://pandas-firestore-993be.firebaseio.com",
+      projectId: "pandas-firestore-993be",
+      storageBucket: "pandas-firestore-993be.appspot.com",
+      messagingSenderId: "830080624208",
+      appId: "1:830080624208:web:1051c1e5e2d9fd07"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
   
   <script src="app.js"></script>
 </body>
